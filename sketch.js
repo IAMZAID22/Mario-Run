@@ -79,6 +79,8 @@ function setup(){
 function draw(){
   background(back);
   if(GameState === PLAY){
+  textSize(25);
+    fill("white");
   text("Coins:"+coins,50,50);
  if(keyDown("w") || keyDown("up")) {
         pla.y = pla.y -22;
