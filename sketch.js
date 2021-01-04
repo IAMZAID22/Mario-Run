@@ -102,7 +102,7 @@ function draw(){
     pla.visible = false;
   }
   if(pla.isTouching(plt8)){
-    textSize(5);
+    textSize(75);
     text("You Won",950,200);
   }
   if(pla.isTouching(c1)  ){
