@@ -53,7 +53,7 @@ function setup(){
   
   plt8 = createSprite(1850,250);
   plt8.addImage(plt);
-  plt8.scale =0.27
+  plt8.scale =0.2;
   
   b1 = createSprite(1,200,1,400);
   b2 = createSprite(1899,200,1,400);
