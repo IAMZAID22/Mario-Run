@@ -83,9 +83,9 @@ function setup(){
   c6.addImage(c);
   c6.scale = 0.1;
   
-  c6 = createSprite(1320,280);
-  c6.addImage(c);
-  c6.scale = 0.1;
+  c7 = createSprite(1320,280);
+  c7.addImage(c);
+  c7.scale = 0.1;
   
 //  pla.debug = true;
   
