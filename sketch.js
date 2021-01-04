@@ -1,4 +1,4 @@
-var back,pla,pl,pl1,gr,la,lImg,plt,plt1,plt2,plt3,plt4,plt5,plt6,plt7,plt8,b1,b2,b3,c1,c2,c3,c,coins,GameState = PLAY,PLAY,END;
+var back,pla,pl,pl1,gr,la,lImg,plt,plt1,plt2,plt3,plt4,plt5,plt6,plt7,plt8,b1,b2,b3,c1,c2,c3,c4,c5,c6,c,coins,GameState = PLAY,PLAY,END;
 function preload(){
   back = loadImage("back.png");
   pl = loadImage("player.png");
@@ -71,6 +71,22 @@ function setup(){
   c3.addImage(c);
   c3.scale = 0.1;
   
+  c4 = createSprite(200,120);
+  c4.addImage(c);
+  c4.scale = 0.1;
+  
+  c5 = createSprite(370,220);
+  c5.addImage(c);
+  c5.scale = 0.1;
+  
+  c6 = createSprite(820,220);
+  c6.addImage(c);
+  c6.scale = 0.1;
+  
+  c6 = createSprite(1320,280);
+  c6.addImage(c);
+  c6.scale = 0.1;
+  
 //  pla.debug = true;
   
   coins = 0;
@@ -116,6 +132,22 @@ function draw(){
   if(pla.isTouching(c3)  ){
     coins = coins+1;
     c3.y = 1000;
+  }
+    if(pla.isTouching(c4)  ){
+    coins = coins+1;
+    c4.y = 1000;
+  }
+  if(pla.isTouching(c5)  ){
+    coins = coins+1;
+    c5.y = 1000;
+  }
+  if(pla.isTouching(c6)  ){
+    coins = coins+1;
+    c6.y = 1000;
+  }
+    if(pla.isTouching(c7)  ){
+    coins = coins+1;
+    c7.y = 1000;
   }
   }
   pla.collide(gr);
